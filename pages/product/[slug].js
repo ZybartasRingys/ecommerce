@@ -31,6 +31,7 @@ const ProductDetails = ({ product, products }) => {
           <div className="small-images-container">
             {image?.map((item, i) => (
               <img
+                key={i}
                 src={urlFor(item)}
                 // jai index === index kuri norim matyti, rodyti small-image selected arba tik small image
                 className={
